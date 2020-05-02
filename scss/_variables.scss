@@ -57,9 +57,7 @@ $colors: (
 ) !default;
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
@@ -67,9 +65,7 @@ $dark:          $gray-800 !default;
 
 $theme-colors: (
 	"primary":    $primary,
-	"secondary":  $secondary,
 	"success":    $success,
-	"info":       $info,
 	"warning":    $warning,
 	"danger":     $danger,
 	"light":      $light,
@@ -485,9 +481,7 @@ $table-bg-level:              -9 !default;
 
 $table-variants: (
 	"primary":    color-level($primary, $table-bg-level),
-	"secondary":  color-level($secondary, $table-bg-level),
 	"success":    color-level($success, $table-bg-level),
-	"info":       color-level($info, $table-bg-level),
 	"warning":    color-level($warning, $table-bg-level),
 	"danger":     color-level($danger, $table-bg-level),
 	"light":      $light,
