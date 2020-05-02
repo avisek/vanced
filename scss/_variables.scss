@@ -192,6 +192,7 @@ $escaped-characters: (
 	(")","%29"),
 ) !default;
 
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -229,6 +230,7 @@ $spacers: (
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
 
+
 // Body
 //
 // Settings for the `<body>` element.
@@ -251,6 +253,7 @@ $emphasized-link-hover-darken-percentage: 15% !default;
 
 $stretched-link-pseudo-element:           after !default;
 $stretched-link-z-index:                  1 !default;
+
 
 // Paragraphs
 //
@@ -354,6 +357,7 @@ $embed-responsive-aspect-ratios: (
 		y: 1
 	)
 ) !default;
+
 
 // Typography
 //
@@ -784,6 +788,7 @@ $form-validation-states: (
 	)
 ) !default;
 
+
 // Z-index master list
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
@@ -1155,6 +1160,7 @@ $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-border-radius:          $border-radius !default;
+
 
 // Carousel
 
