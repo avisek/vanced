@@ -2,6 +2,10 @@
 /*!
  * Vanced
  */
+::selection {
+  background-color: rgba(13, 110, 253, 0.25);
+}
+
 *,
 *::before,
 *::after {

@@ -6,6 +6,16 @@
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
 
 
+// Selection
+//
+
+::selection {
+	background-color: $selection-bg;
+	color: $selection-color;
+	text-shadow: $selection-text-shadow;
+}
+
+
 // Document
 //
 // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.

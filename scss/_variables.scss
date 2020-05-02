@@ -231,6 +231,14 @@ $spacers: (
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
 
 
+// Selection
+//
+
+$selection-bg:                   rgba($primary, .25) !default;
+$selection-color:                null !default;
+$selection-text-shadow:          null !default;
+
+
 // Body
 //
 // Settings for the `<body>` element.
