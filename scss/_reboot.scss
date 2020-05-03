@@ -270,12 +270,19 @@ sup { top: -.5em; }
 // Links
 
 a {
+	background-color: $link-bg;
 	color: $link-color;
 	text-decoration: $link-decoration;
+	text-decoration-color: $link-decoration-color;
+	border-radius: $link-border-radius;
+	margin: (-$link-expand-y) (-$link-expand-x);
+	padding: $link-expand-y $link-expand-x;
 
 	&:hover {
+		background-color: $link-hover-bg;
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
+		text-decoration-color: $link-hover-decoration-color;
 	}
 }
 

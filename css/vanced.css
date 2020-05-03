@@ -179,9 +179,15 @@ sup {
 a {
   color: #0d6efd;
   text-decoration: underline;
+  text-decoration-color: rgba(13, 110, 253, 0.25);
+  border-radius: 0.25rem;
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
 }
 a:hover {
-  color: #024dbc;
+  background-color: rgba(13, 110, 253, 0.125);
+  color: #0d6efd;
+  text-decoration: none;
 }
 
 a:not([href]), a:not([href]):hover {
