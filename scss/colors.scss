@@ -1,0 +1,64 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+.color-book {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 0.5rem;
+	padding: 0.5rem;
+}
+
+.color-palette {
+	border-radius: $border-radius;
+	box-shadow: 0 .15rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+.color-swatch {
+	display: block;
+	position: relative;
+	border-color: rgba(16, 22, 26, 0.2);
+	border-style: solid;
+	border-width: 0 1px;
+	font-family: $font-family-monospace;
+	padding: 0.25rem 0.75rem;
+}
+
+.color-swatch:first-child {
+	border-top-width: 1px;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.color-swatch:last-child {
+	border-bottom-width: 1px;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.color-name {
+
+}
+
+$colors: (
+	"blue":       $blue,
+	"indigo":     $indigo,
+	"purple":     $purple,
+	"pink":       $pink,
+	"red":        $red,
+	"orange":     $orange,
+	"yellow":     $yellow,
+	"green":      $green,
+	"teal":       $teal,
+	"cyan":       $cyan
+);
+
+@each $colorName, $colorValue in $colors {
+	@for $i from -4 through 4 {
+		$color: mix(if($i < 0, white, black), $colorValue, abs($i) * 2 * $theme-color-interval);
+		.#{$colorName}-#{500 + $i * 100} {
+			background-color: $color;
+			color: color-contrast($color);
+		}
+	}
+}
